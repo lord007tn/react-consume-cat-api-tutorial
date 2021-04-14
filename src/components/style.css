@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(-45deg, #182952, #23a6d5, #23d5ab);
+    margin-left: auto;
+    margin-right: auto;
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    text-align: center;
+}
+.title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 68px;
+    font-weight: 700;
+    color: aliceblue;
+
+    font-family: 'Poppins',sans-serif;
+}
+.fact {
+        font-size: 32px;
+        font-weight: 500;
+        margin-left: 55px;
+        margin-right: 55px;
+        color: aliceblue;
+
+        font-family: 'Poppins',
+        sans-serif;
+}
+.btn {
+            font-size: 32px;
+            font-weight: 500;
+                    background-color: #d84a40;
+                    font-family: 'Poppins',
+                    sans-serif;
+                    border-radius: 30px;
+                    appearance: none;
+                    outline: none;
+                    border: 1px solid white;
+                    cursor: pointer;
+                    padding: 15px;
+                    transition: all 0.2s ease-in-out;
+                    
+    
+}
+.btn:hover {
+    transform: scale3d(1.2,1.2,1.2);
+}
+.btn:active {
+    background-color: #8f332c;
+}
+.btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.lds-ring {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: calc(50% - (180px / 2));
+    left: calc(50% - (180px / 2));
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 164px;
+    height: 164px;
+    margin: 8px;
+    border: 8px solid #8f332c;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #8f332c transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
